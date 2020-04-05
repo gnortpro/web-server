@@ -9,7 +9,7 @@ app.use(express.static(publicDirectory)); // use index.html static file as homep
 app.set('view engine', 'hbs'); // set views folder as default view
 
 app.get('', (req, res) => {
-  res.render('index', {
+  res.render('index', { 
     title: 'Hello World',
     name: 'Trong'
   });
@@ -34,6 +34,5 @@ app.get('/weather', (req, res) => {
 });
 
 
-app.listen(3000, () => {
-  console.log('Server up on 3000');
-});
+const PORT = process.env.PORT||'8080';
+server.listen(PORT)

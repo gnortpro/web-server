@@ -37,5 +37,4 @@ app.get('/weather', (req, res) => {
 });
 
 
-const PORT = process.env.PORT||'8080';
-app.listen(PORT);
+app.listen(3000);

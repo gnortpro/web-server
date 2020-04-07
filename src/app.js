@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const sendMail = require('./mailer');
+// const sendMail = require('./mailer');
 // console.log(__dirname);
 // console.log(path.join(__dirname, '../public'));
 const app = express();
